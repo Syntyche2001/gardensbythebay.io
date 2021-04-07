@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Assignment 1">
+<meta name="keywords" content="Gardens By The Bay , Assignment 1, Basic HTML, Basic CSS">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+    margin: 0;
+    background-color: white;
+    }
+
+h1 {
+    font-size: 90px;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+    margin-top: -200px;
+    }
+
+h2 {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    }
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+p {
+  color: black;
+  text-align: center;
+  font-size: 20px;
+  font-family: century;
+  }
+
+/*Sticky for navigation bar*/
+
+div.sticky {
+  position: sticky;
+  top: 0;
+}
+
+/*Navigation Bar*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 100px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.7)
+  }
+
+li {
+   float: left;
+   }
+
+li a {
+     display: block;
+     color: black;
+     text-align: center;
+     padding: 25px 110px;
+     text-decoration: none;
+     font-size: 20px;
+     }
+
+  li a:hover {
+    background-color: #FAEDCD;
+    }
+
+  /*Side by side images*/
+  * {
+    box-sizing: border-box;
+    }
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+  <img src="three.jpg" alt="one" width="100%" height="300" padding-bottom="100px">
+  <h1>Gardens By the Bay.</h1>
+
+<!--Navigation Bar-->
+<div class="sticky" style="z-index:2;">
+  <ul>
+    <li><a href="#home">HOME</a></li>
+    <li><a href="#features">FEATURES</a></li>
+    <li><a href="#tickets">TICKETS</a></li>
+    <li><a href="#findus">FIND US!</a></li>
+  </ul>
+</div>
+
+<hr>
+
+<!--First Heading-->
+<h2 id=home><u>HOME</u></h2>
+<iframe width="100%" height="600px" src="https://www.youtube.com/embed/xEDGrBy8Mnc?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</iframe>
+  <p>The Gardens by the Bay is a nature park spanning 101 hectares in the Central Region of Singapore, adjacent to the<br> Marina Reservoir.
+     The park consists of three waterfront gardens:
+      <br>
+      <br>
+      -Bay East Garden
+      <br>
+      -Bay South Garden
+      <br>
+      -Bay Central Garden
+   </p>
+<hr>
+
+<!--Second Heading-->
+<h2 id=features><u>FEATURES</u></h2>
+
+<!--Bay East Garden-->
+<img src="bayeastgarden.jpg" alt="Bay East Garden" width="60%" height="420px">
+<h3 style="text-align: center"><i>Bay East Garden</i></h3>
+  <p>Bay East Garden, the second largest of the three gardens, offers a tranquil respite from the bustling city
+    <br>and a stunning view of the Singapore skyline even as it unfolds over the next century.This green space
+      <br>is open to the public and has immense potential for future development as a waterfront garden.
+      <br>
+    <br>
+  </p>
+<br>
+
+<!--Bay South Garden-->
+<img src="baysouthgarden.jpg" alt="Bay South Garden" width="60%" height="420px">
+<h3 style="text-align: center"><i>Bay South Garden</i></h3>
+  <p>The Bay South Garden showcases the best of tropical horticulture and garden artistry, with a mass display of
+    <br>tropical flowers and colourful foliage. A rich diversity of plants from different parts of the world have been planted
+      <br>in the Gardens, enabling visitors to experience different botanical worlds, from South America to the Mediterranean,
+      <br>right here in sunny Singapore. Together with these will be a wide mix of indigenous plants,
+    <br>reflecting the cultural wealth of our communities.
+  </p>
+<br>
+
+<!--Bay Central Garden-->
+<img src="baycentralgarden.jpg" alt="Bay Central Garden" width="60%" height="420px">
+<h3 style="text-align: center"><i>Bay Central Garden</i></h3>
+  <p>Bay Central Garden with the area of 15 hectares is the smallest garden in the bay.
+    <br>The central garden with its 3-kilometer seafront is an ideal place for scenic walks.
+    <br>
+  </p>
+<hr>
+
+<!-- Photo Grid -->
+<div class="row">
+  <div class="column">
+    <img src="imageone.jpg" style="width:100%">
+    <img src="imagetwo.jpg" style="width:100%">
+    <img src="imagethree.jpg" style="width:100%">
+    <img src="imagefour.jpg" style="width:100%" height="400px">
+  </div>
+
+  <div class="column">
+    <img src="imagefive.jpg" style="width:100%">
+    <img src="imagesix.jpg" style="width:100%">
+    <img src="imageseven.jpg" style="width:100%">
+    <img src="imageeight.jpg" style="width:100%" height="680px">
+    <img src="imagenine.jpg" style="width:100%">
+  </div>
+</div>
+<br>
+<hr>
+
+<!-- Third Heading -->
+<h2 id=tickets><u>TICKETS</u></h2>
+<a href="https://www.gardensbythebay.com.sg/en/plan-your-visit/hours-admission.html"><center>Click here for ticket prices!</center></a>
+<!-- Fourth Heading -->
+<h2 id=findus><u>FIND US!</u></h2>
+<h2 style="width: 100%"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8202911035924!2d103.86142451475396!3d1.2815682990652666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1904937e1633%3A0x62099677b59fca76!2sGardens%20by%20the%20Bay!5e0!3m2!1sen!2ssg!4v1617292508790!5m2!1sen!2ssg"
+width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></h2>
+
+
+</body>
+</html>
